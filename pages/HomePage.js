@@ -21,7 +21,7 @@ const HomePage = () => {
             International Conference on Recent Trends in Computing and
             Communication Technologies -{" "}
             <span className="text-blue-900 hover:text-blue-600 transition-all duration-300">
-              ICRCCT'2k24
+              ICRCCT 2k24
             </span>
           </h1>
         </div>

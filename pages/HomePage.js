@@ -12,7 +12,6 @@ const HomePage = () => {
 
   return (
     <div className="w-full h-[600px] flex flex-col items-center justify-center relative overflow-hidden">
-      {/* Optional background iframe can go here */}
       <div className="relative z-10 text-center">
         <div className="textContainer flex justify-center p-2 w-75 ml-25 mr-25">
           <h1

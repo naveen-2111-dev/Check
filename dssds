@@ -1,0 +1,193 @@
+[33mcommit 6795e9525de13c9fe11930192666c691eaa1a864[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: SaranSrini03 <83581210+SaranSrini03@users.noreply.github.com>
+Date:   Thu Oct 10 15:47:20 2024 +0530
+
+    deployment
+
+[33mcommit 242448a2789a9123e7b2e340b029d5a57bf54d89[m
+Author: SaranSrini03 <83581210+SaranSrini03@users.noreply.github.com>
+Date:   Thu Oct 10 14:57:34 2024 +0530
+
+    overalfinished
+
+[33mcommit ec4f8f9d6ebb4970a75b92038bbfec45a8748b9c[m
+Merge: 05d5358 e5a33d6
+Author: SaranSrini03 <83581210+SaranSrini03@users.noreply.github.com>
+Date:   Thu Oct 10 13:00:06 2024 +0530
+
+    no nav
+
+[33mcommit e5a33d66e3cde04fea64342e0a6c757be62f4d04[m
+Merge: b11d76d 3f13264
+Author: Naveen Rajan M <137963160+naveen-2111-dev@users.noreply.github.com>
+Date:   Thu Oct 10 11:55:35 2024 +0530
+
+    Merge pull request #8 from naveen-2111-dev/naveen
+    
+    bot
+
+[33mcommit 3f13264a452901027faa8f4a7bda2e07a57697a5[m
+Author: naveen-2111-dev <naveenrajanm9@gmail.com>
+Date:   Thu Oct 10 11:54:27 2024 +0530
+
+    bot
+
+[33mcommit 05d53584f0d20a94bda0b9318088d297dac11ca2[m
+Author: SaranSrini03 <83581210+SaranSrini03@users.noreply.github.com>
+Date:   Thu Oct 10 11:40:41 2024 +0530
+
+    timelinepage updated
+
+[33mcommit b11d76d237bcd36aec7f4339a66ab75a3c83236e[m
+Author: naveen-2111-dev <naveenrajanm9@gmail.com>
+Date:   Thu Oct 10 01:28:20 2024 +0530
+
+    error correction
+
+[33mcommit 5b9b6f48e4649892d85750689ec93be166bed1cd[m
+Author: naveen-2111-dev <naveenrajanm9@gmail.com>
+Date:   Thu Oct 10 01:22:38 2024 +0530
+
+    register and bot
+
+[33mcommit a0649f82e029a0ddba9cfa84fdcd2e030ceea766[m
+Author: SaranSrini03 <83581210+SaranSrini03@users.noreply.github.com>
+Date:   Wed Oct 9 16:17:22 2024 +0530
+
+    aboutpush
+
+[33mcommit 31da577a9f3b7d52392acf9fbf04bc814ca2dc0e[m
+Author: SaranSrini03 <83581210+SaranSrini03@users.noreply.github.com>
+Date:   Wed Oct 9 15:10:52 2024 +0530
+
+    home
+
+[33mcommit d868d6e1e681b80a4e0a094ff49a21c1128f50b3[m
+Merge: 5ac79cd ee51956
+Author: SaranSrini03 <83581210+SaranSrini03@users.noreply.github.com>
+Date:   Wed Oct 9 11:14:19 2024 +0530
+
+    Merge branch 'main' of https://github.com/naveen-2111-dev/Conference.ssce
+
+[33mcommit 5ac79cd33fbbad46e2826af5d2a83eac38461e2c[m
+Author: SaranSrini03 <83581210+SaranSrini03@users.noreply.github.com>
+Date:   Wed Oct 9 11:13:52 2024 +0530
+
+    Submit commited
+
+[33mcommit ee51956308522a357c94ecc55620eda2169c8997[m
+Merge: d18c3ac 376c411
+Author: Naveen Rajan M <137963160+naveen-2111-dev@users.noreply.github.com>
+Date:   Wed Oct 9 11:11:11 2024 +0530
+
+    Merge pull request #7 from naveen-2111-dev/code031
+    
+    Merge pull request #6 from naveen-2111-dev/main
+
+[33mcommit 376c411bcd0a68ba3be2e940e17069e07a330136[m
+Merge: af2e4c9 d18c3ac
+Author: Naveen Rajan M <137963160+naveen-2111-dev@users.noreply.github.com>
+Date:   Wed Oct 9 11:10:44 2024 +0530
+
+    Merge pull request #6 from naveen-2111-dev/main
+    
+    Merge pull request #5 from naveen-2111-dev/code031
+
+[33mcommit d18c3ac1221f0537afa290ae2f09507df37631e3[m
+Merge: 73bdbf4 af2e4c9
+Author: Naveen Rajan M <137963160+naveen-2111-dev@users.noreply.github.com>
+Date:   Wed Oct 9 11:08:47 2024 +0530
+
+    Merge pull request #5 from naveen-2111-dev/code031
+    
+    Commited submit
+
+[33mcommit af2e4c9e4ed36796e5eb210effd92169864e4805[m
+Author: SaranSrini03 <83581210+SaranSrini03@users.noreply.github.com>
+Date:   Wed Oct 9 11:07:58 2024 +0530
+
+    Commited submit
+
+[33mcommit 73bdbf4f0d489ecfedab2af4882bafb5ebdae65d[m
+Merge: a6264c9 962c705
+Author: Naveen Rajan M <137963160+naveen-2111-dev@users.noreply.github.com>
+Date:   Tue Oct 8 23:43:44 2024 +0530
+
+    Merge pull request #4 from naveen-2111-dev/dev2
+    
+    Dev2
+
+[33mcommit 962c7055b262bee96f30d88a30ae4f8c1ce547ca[m
+Author: naveen-2111-dev <naveenrajanm9@gmail.com>
+Date:   Tue Oct 8 23:42:34 2024 +0530
+
+    mail check ok
+
+[33mcommit 86996aad0f9b19544175545991de5819000371d0[m
+Author: naveen-2111-dev <naveenrajanm9@gmail.com>
+Date:   Tue Oct 8 23:15:10 2024 +0530
+
+    mailer update
+
+[33mcommit a6264c9f93073fa420db5e6590f553bf2089eb6f[m
+Author: Naveen Rajan M <137963160+naveen-2111-dev@users.noreply.github.com>
+Date:   Tue Oct 8 21:30:44 2024 +0530
+
+    Update .env
+
+[33mcommit 3ea33fec5f570a71be1aae518a0edb38ffb3b572[m
+Merge: fc08846 13bb381
+Author: Naveen Rajan M <137963160+naveen-2111-dev@users.noreply.github.com>
+Date:   Tue Oct 8 21:29:22 2024 +0530
+
+    Merge pull request #3 from naveen-2111-dev/dev2
+    
+    server side data storing
+
+[33mcommit 13bb381575c46d8ea8d68eb2da9a466e47d110c3[m
+Author: naveen-2111-dev <naveenrajanm9@gmail.com>
+Date:   Tue Oct 8 21:24:25 2024 +0530
+
+    server side data storing
+
+[33mcommit fc088461b0ed1c1a184d507b315d05a7c86c7a11[m
+Merge: c1b6d61 4b98fda
+Author: Naveen Rajan M <137963160+naveen-2111-dev@users.noreply.github.com>
+Date:   Tue Oct 8 15:48:22 2024 +0530
+
+    Merge pull request #2 from naveen-2111-dev/dev
+    
+    mailer
+
+[33mcommit 4b98fda28df89b3c3f08c7fab9179ba253e780fa[m
+Author: SaranSrini03 <83581210+SaranSrini03@users.noreply.github.com>
+Date:   Tue Oct 8 15:46:16 2024 +0530
+
+    mailer
+
+[33mcommit c1b6d61ebf8090cefbfd001a1c19fac22339cb2e[m
+Merge: 8ef9835 b4deb71
+Author: Naveen Rajan M <137963160+naveen-2111-dev@users.noreply.github.com>
+Date:   Tue Oct 8 15:21:39 2024 +0530
+
+    Merge pull request #1 from naveen-2111-dev/dev
+    
+    server update
+
+[33mcommit b4deb718ae31caea6b644cb3c7d39ed9f6c29f5d[m
+Author: SaranSrini03 <83581210+SaranSrini03@users.noreply.github.com>
+Date:   Tue Oct 8 15:19:21 2024 +0530
+
+    server update
+
+[33mcommit 8ef9835222a7afcea99ee705b335ec3b8fe67dfb[m
+Author: naveen-2111-dev <naveenrajanm9@gmail.com>
+Date:   Mon Oct 7 21:05:31 2024 +0530
+
+    init
+
+[33mcommit 15a9ec8596f29b84a3c60e0f1271bf7580d8705b[m
+Author: naveen-2111-dev <naveenrajanm9@gmail.com>
+Date:   Mon Oct 7 20:34:13 2024 +0530
+
+    Initial commit from Create Next App

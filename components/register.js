@@ -36,10 +36,13 @@ const Register = () => {
         body: JSON.stringify(BodyData),
       });
 
+      const data = await response.json();
+      console.log(data); // Check if this logs the expected response
+
       if (!response.ok) {
+        console.log(response.status, response.statusText); // Log the status of the response
         throw new Error("Registration failed.");
       }
-      const data = await response.json();
 
       setSuccess(true);
       setEmail("");
@@ -48,7 +51,12 @@ const Register = () => {
       setError("");
       setuser(data.data);
 
-      window.location.href = "https://forms.gle/ohEG2zF6mvJnoUyDA";
+      // Adding a delay before redirecting
+      setTimeout(() => {
+        console.log("Redirecting...");
+        window.location.href = "https://forms.gle/ohEG2zF6mvJnoUyDA";
+      }, 1000); // Adds a 1-second delay before redirecting
+
     } catch (err) {
       setError(err.message);
     }

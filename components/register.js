@@ -1,4 +1,3 @@
-import { setuser } from "@/utils/common";
 import React, { useState } from "react";
 import "tailwindcss/tailwind.css";
 
@@ -49,7 +48,6 @@ const Register = () => {
       setPassword("");  
       setConfirmPassword("");
       setError("");
-      setuser(data.data);
 
       // Adding a delay before redirecting
       setTimeout(() => {

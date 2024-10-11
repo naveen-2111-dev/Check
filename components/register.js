@@ -3,6 +3,7 @@ import { FaExclamationTriangle, FaLock } from "react-icons/fa";
 import { ImSpinner2 } from "react-icons/im";
 import "tailwindcss/tailwind.css";
 import "../app/style.css";
+import { useRouter } from "next/router";
 
 const Register = () => {
   const [email, setEmail] = useState("");
@@ -11,20 +12,21 @@ const Register = () => {
   const [error, setError] = useState("");
   const [success, setSuccess] = useState(false);
   const [loading, setLoading] = useState(false);
+  const router = useRouter();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setLoading(true); 
+    setLoading(true);
 
     if (!email || !password || !confirmPassword) {
       setError("All fields are required.");
-      setLoading(false); 
-      return;  
+      setLoading(false);
+      return;
     }
 
     if (password !== confirmPassword) {
       setError("Passwords do not match.");
-      setLoading(false); 
+      setLoading(false);
       return;
     }
 
@@ -43,7 +45,8 @@ const Register = () => {
       });
 
       if (!response.ok) {
-        throw new Error("Registration failed.");
+        const errorData = await response.json(); // Get error response
+        throw new Error(errorData.message || "Registration failed.");
       }
 
       setSuccess(true);
@@ -53,12 +56,12 @@ const Register = () => {
       setError("");
 
       setTimeout(() => {
-        window.location.href = "https://forms.gle/ohEG2zF6mvJnoUyDA";
+        router.push("https://forms.gle/ohEG2zF6mvJnoUyDA");
       }, 1000);
     } catch (err) {
       setError(err.message);
     } finally {
-      setLoading(false); 
+      setLoading(false);
     }
   };
 
@@ -131,7 +134,7 @@ const Register = () => {
                   ? "bg-red-600 hover:bg-red-700"
                   : "bg-blue-600 hover:bg-blue-700"
               }`}
-              disabled={loading} 
+              disabled={loading}
             >
               {loading ? (
                 <>

@@ -8,7 +8,7 @@ export async function POST(req) {
   if (!mail || !password) {
     return NextResponse.json(
       { message: "user details - null" },
-      { status: 404 }
+      { status: 400 }
     );
   }
 
@@ -24,6 +24,7 @@ export async function POST(req) {
       return NextResponse.json({ message: "user not found" }, { status: 404 });
     }
   } catch (err) {
+    console.error(err); // Log the error for debugging
     return NextResponse.json(
       { message: "internal server error" },
       { status: 500 }

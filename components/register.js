@@ -1,5 +1,8 @@
 import React, { useState } from "react";
+import { FaExclamationTriangle, FaLock } from "react-icons/fa";
+import { ImSpinner2 } from "react-icons/im";
 import "tailwindcss/tailwind.css";
+import "../app/style.css";
 
 const Register = () => {
   const [email, setEmail] = useState("");
@@ -36,107 +39,89 @@ const Register = () => {
       });
 
       const data = await response.json();
-      console.log(data); // Check if this logs the expected response
+      console.log(data);
 
       if (!response.ok) {
-        console.log(response.status, response.statusText); // Log the status of the response
+        console.log(response.status, response.statusText);
         throw new Error("Registration failed.");
       }
 
       setSuccess(true);
       setEmail("");
-      setPassword("");  
+      setPassword("");
       setConfirmPassword("");
       setError("");
 
-      // Adding a delay before redirecting
       setTimeout(() => {
-        console.log("Redirecting...");
         window.location.href = "https://forms.gle/ohEG2zF6mvJnoUyDA";
-      }, 1000); // Adds a 1-second delay before redirecting
-
+      }, 1000);
     } catch (err) {
       setError(err.message);
     }
   };
 
   return (
-    <div className="flex items-center justify-center h-screen bg-black">
-      <div className="bg-blue-900 shadow-md rounded px-8 py-6 w-96">
-        <h2 className="text-2xl font-bold text-white text-center mb-4">
-          Register
+    <div className="flex items-center justify-center h-screen bg-whihte">
+      <div className="bg-transparent shadow-lg rounded px-8 py-6 w-96">
+        <h2 className="text-4xl font-bold font-mono text-black text-center mb-10">
+          <span className="text-blue-600">L</span>ogin
         </h2>
-        {error && (
-          <p className="text-white font-extrabold p-3 rounded-lg text-sm mb-4 bg-red-400">
-            {error}
-          </p>
-        )}
-        {success && (
-          <p className="text-green-500 text-sm mb-4">
-            Registration successful! Redirecting...
-          </p>
-        )}
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
-            <label
-              className="block text-gray-300 text-sm font-bold mb-2"
-              htmlFor="email"
-            >
-              Email
-            </label>
             <input
               type="email"
               id="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="shadow appearance-none border border-gray-600 rounded w-full py-2 px-3 text-gray-200 bg-black focus:bg-gray-800 focus:border-blue-500"
-              placeholder="Enter your email"
+              className="shadow appearance-none border border-gray-600 rounded w-full py-2 px-3 text-gray-500 focus:border-blue-500"
+              placeholder="Team-Leader@email.com"
               required
             />
           </div>
 
           <div className="mb-4">
-            <label
-              className="block text-gray-300 text-sm font-bold mb-2"
-              htmlFor="password"
-            >
-              Password
-            </label>
             <input
               type="password"
               id="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              className="shadow appearance-none border border-gray-600 rounded w-full py-2 px-3 text-gray-200 bg-black focus:bg-gray-800 focus:border-blue-500"
-              placeholder="Enter your password"
+              className="shadow appearance-none border border-gray-600 rounded w-full py-2 px-3 text-gray-500 focus:border-blue-500"
+              placeholder="$#%?/*@"
               required
             />
           </div>
 
           <div className="mb-4">
-            <label
-              className="block text-gray-300 text-sm font-bold mb-2"
-              htmlFor="confirm-password"
-            >
-              Confirm Password
-            </label>
             <input
               type="password"
               id="confirm-password"
               value={confirmPassword}
               onChange={(e) => setConfirmPassword(e.target.value)}
-              className="shadow appearance-none border border-gray-600 rounded w-full py-2 px-3 text-gray-200 bg-black focus:bg-gray-800 focus:border-blue-500"
-              placeholder="Confirm your password"
+              className="shadow appearance-none border border-gray-600 rounded w-full py-2 px-3 text-gray-500 focus:border-blue-500"
+              placeholder="$#%?/*@"
               required
             />
           </div>
-
-          <button
-            type="submit"
-            className="bg-blue-600 text-white font-bold py-2 px-4 rounded w-full hover:bg-blue-700 transition duration-300"
-          >
-            Register
-          </button>
+          <div className="flex justify-center">
+            <button
+              type="submit"
+              className="bg-blue-600 flex gap-3 justify-center items-center text-white mt-10 font-bold py-2 px-4 rounded w-1/2 hover:bg-blue-700 transition duration-300"
+            >
+              {success ? (
+                <>
+                  <ImSpinner2 className="animate-spin" /> Redirecting
+                </>
+              ) : error ? (
+                <>
+                  Error <FaExclamationTriangle className="text-red-900 shake" />
+                </>
+              ) : (
+                <>
+                  Submit <FaLock size={14} />
+                </>
+              )}
+            </button>
+          </div>
         </form>
       </div>
     </div>

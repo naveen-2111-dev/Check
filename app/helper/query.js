@@ -3,14 +3,15 @@ const prisma = new PrismaClient();
 
 export default async function emailQuery(email, pass) {
   try {
-    await prisma.userCred.findFirst({
+    const AvailUser = await prisma.userCred.findMany({
       where: {
         mail: email,
         password: pass,
       },
     });
+
+    return AvailUser;
   } catch (err) {
-    console.log(err);
     return null;
   }
 }
@@ -20,7 +21,6 @@ emailQuery()
     await prisma.$disconnect();
   })
   .catch(async (err) => {
-    console.log(err);
     await prisma.$disconnect();
     process.exit(1);
   });

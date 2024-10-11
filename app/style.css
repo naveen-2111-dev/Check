@@ -16,3 +16,7 @@
 .shake {
   animation: shake infinite .5s ease-in-out; 
 }
+
+.images{
+  background-image: url('../public/images/bg.png');
+}
